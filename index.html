@@ -1,103 +1,100 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b0b0f">
-  <meta name="description" content="AI video creator portfolio — cinematic visuals, product films, and social-first advertising.">
-  <title>Christian Comedia — AI Video Creator</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root{--bg:#0b0b0f;--panel:#121218;--panel2:#17171f;--text:#f4f2f8;--muted:#a5a1b2;--line:rgba(255,255,255,.1);--violet:#a78bfa;--pink:#f0abfc;--max:1160px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button{font:inherit}
-    .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}.nav{position:sticky;top:0;z-index:10;background:rgba(11,11,15,.78);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.navin{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-family:'Space Grotesk';font-weight:700;letter-spacing:-.04em}.brand span{color:var(--violet)}.links{display:flex;gap:28px;color:var(--muted);font-size:.92rem}.links a:hover{color:white}.navcta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid var(--line);padding:11px 17px;border-radius:999px;font-weight:600;font-size:.9rem;transition:.2s}.navcta:hover,.btn:hover{border-color:var(--violet);transform:translateY(-2px)}.btn.primary{background:linear-gradient(110deg,var(--violet),var(--pink));color:#15111d;border:0}
-    .hero{position:relative;overflow:hidden;padding:100px 0 74px}.hero:before{content:"";position:absolute;width:650px;height:650px;border-radius:50%;right:-140px;top:-220px;background:radial-gradient(circle,rgba(139,92,246,.23),rgba(139,92,246,0) 68%);pointer-events:none}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#d7c9ff;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.15em}.dot{width:7px;height:7px;border-radius:50%;background:#c4b5fd;box-shadow:0 0 14px #a78bfa}.hero h1{font-family:'Space Grotesk';font-size:clamp(3.2rem,8vw,7.1rem);line-height:.96;letter-spacing:-.075em;max-width:900px;margin:25px 0}.gradient{background:linear-gradient(100deg,#fff 10%,#c4b5fd 52%,#f0abfc 95%);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:1.1rem;color:var(--muted);max-width:620px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0 0}.hero-foot{display:flex;gap:24px;flex-wrap:wrap;margin-top:52px;color:var(--muted);font-size:.85rem}.hero-foot span{display:flex;align-items:center;gap:8px}.hero-foot b{color:#fff;font-weight:600}
-    .section{padding:76px 0}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:28px}.kicker{color:var(--violet);font-size:.75rem;text-transform:uppercase;letter-spacing:.16em;font-weight:700}.section h2{font:600 clamp(2rem,4vw,3.4rem)/1.08 'Space Grotesk';letter-spacing:-.055em;margin:8px 0 0}.sectionhead p{max-width:390px;color:var(--muted);margin:0}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 22px}.filter{border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:8px 14px;cursor:pointer}.filter.active,.filter:hover{background:#242033;color:white;border-color:#8b5cf6}
-    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.project{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--panel);transition:transform .25s,border-color .25s}.project:hover{transform:translateY(-4px);border-color:rgba(167,139,250,.5)}.media{aspect-ratio:16/9;position:relative;background:radial-gradient(ellipse at 70% 30%,rgba(167,139,250,.24),transparent 35%),linear-gradient(135deg,#272034,#111117 60%,#1b1824);overflow:hidden}.media:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.45),transparent 50%);pointer-events:none}.media video,.media img{width:100%;height:100%;object-fit:cover;display:block}.media video{background:#15131c}.placeholder{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;text-align:center;padding:20px;color:#d8d1e8}.placeholder .orb{width:74px;height:74px;border-radius:50%;border:1px solid rgba(255,255,255,.3);display:grid;place-items:center;background:rgba(255,255,255,.06);font-size:1.8rem;box-shadow:0 0 65px rgba(167,139,250,.2)}.placeholder small{color:#a9a2b8}.play{position:absolute;z-index:2;right:16px;bottom:16px;border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:9px 13px;background:rgba(12,12,16,.7);color:#fff;cursor:pointer}.play:hover{background:#a78bfa;color:#100d17}.pbody{padding:19px}.pmeta{display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--muted);font-size:.75rem;text-transform:uppercase;letter-spacing:.1em}.tag{border:1px solid var(--line);padding:4px 8px;border-radius:999px;letter-spacing:0;text-transform:none}.pbody h3{font:600 1.35rem 'Space Grotesk';margin:12px 0 6px}.pbody p{margin:0;color:var(--muted);font-size:.92rem}.note{font-size:.82rem;color:var(--muted);margin-top:17px}
-    .aboutgrid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:start}.aboutcopy p{color:var(--muted);font-size:1.02rem}.aboutcard{padding:28px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,#17151f,#101014)}.aboutcard h3{font:600 1.25rem 'Space Grotesk';margin:0 0 15px}.skilllist{display:flex;flex-wrap:wrap;gap:9px}.skill{padding:9px 12px;border-radius:9px;background:#22202b;border:1px solid var(--line);font-size:.87rem;color:#e7e0f8}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}.step{padding:20px;border:1px solid var(--line);border-radius:14px;background:var(--panel)}.step .num{color:var(--violet);font:600 1.4rem 'Space Grotesk'}.step h4{margin:8px 0 5px}.step p{color:var(--muted);font-size:.88rem;margin:0}
-    .contact{padding:48px;border:1px solid rgba(167,139,250,.3);border-radius:24px;background:radial-gradient(ellipse at 90% 10%,rgba(139,92,246,.19),transparent 40%),#121118}.contact h2{max-width:680px}.contact p{color:var(--muted);max-width:580px}.contactrow{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-top:24px}.contactlinks{display:flex;gap:10px;flex-wrap:wrap}.footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem}.footerin{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}.tiny{font-size:.76rem;color:var(--muted)}
-    dialog{max-width:min(1000px,94vw);width:100%;padding:0;border:1px solid var(--line);border-radius:16px;background:#0b0b0f;color:white}dialog::backdrop{background:rgba(0,0,0,.82);backdrop-filter:blur(5px)}.modalhead{display:flex;justify-content:space-between;align-items:center;padding:12px 16px}.modalhead button{background:transparent;border:1px solid var(--line);border-radius:50%;width:34px;height:34px;color:white;cursor:pointer}.modalvideo{width:100%;max-height:75vh;display:block;background:black}
-    @media(max-width:760px){.links{display:none}.hero{padding:76px 0 54px}.section{padding:55px 0}.sectionhead{display:block}.sectionhead p{margin-top:12px}.grid,.aboutgrid{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.contact{padding:27px}.navcta{padding:9px 12px}.hero-foot{gap:12px}.wrap{width:min(var(--max),calc(100% - 28px))}}
-  </style>
-</head>
-<body>
-<header class="nav"><div class="wrap navin">
-  <a class="brand" href="#home">CHRISTIAN<span>.</span></a>
-  <nav class="links" aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#process">Process</a><a href="#contact">Contact</a></nav>
-  <a class="navcta" href="#contact">Let's work together ↗</a>
-</div></header>
-<main>
-  <section class="hero" id="home"><div class="wrap">
-    <div class="eyebrow"><span class="dot"></span> AI VIDEO CREATOR · 2026</div>
-    <h1>Imagined.<br><span class="gradient">Brought to life.</span></h1>
-    <p>I create AI-powered videos that turn ideas into cinematic visuals — from product-focused commercials to scroll-stopping social content.</p>
-    <div class="actions"><a class="btn primary" href="#work">Explore my work <span>↘</span></a><a class="btn" href="#contact">Start a project <span>↗</span></a></div>
-    <div class="hero-foot"><span>✦ <b>AI video production</b></span><span>✦ Product & fashion visuals</span><span>✦ Social-first storytelling</span></div>
-  </div></section>
-  <section class="section" id="work"><div class="wrap">
-    <div class="sectionhead"><div><div class="kicker">Selected projects</div><h2>Made to make you look.</h2></div><p>A selection of AI video concepts and visual experiments. Replace the sample cards with your finished work.</p></div>
-    <div class="filters" role="group" aria-label="Filter projects">
-      <button class="filter active" data-filter="all">All work</button><button class="filter" data-filter="product">Product ads</button><button class="filter" data-filter="fashion">Fashion</button><button class="filter" data-filter="cinematic">Cinematic / VFX</button><button class="filter" data-filter="social">Social content</button>
-    </div>
-    <div class="grid" id="projectGrid">
-      <article class="project" data-category="product" data-title="Product Film — Concept 01" data-video="">
-        <div class="media"><div class="placeholder"><div class="orb">✧</div><strong>YOUR PRODUCT VIDEO</strong><small>Drop your MP4 into the videos folder</small></div><button class="play" type="button">▶ Preview</button></div>
-        <div class="pbody"><div class="pmeta"><span>Product advertising</span><span class="tag">01 / Spec</span></div><h3>Product Film — Concept 01</h3><p>A polished, cinematic product showcase built around lighting, texture, and detail.</p></div>
-      </article>
-      <article class="project" data-category="fashion" data-title="Fashion Motion — Concept 02" data-video="">
-        <div class="media"><div class="placeholder"><div class="orb">✳</div><strong>YOUR FASHION VIDEO</strong><small>Drop your MP4 into the videos folder</small></div><button class="play" type="button">▶ Preview</button></div>
-        <div class="pbody"><div class="pmeta"><span>Fashion / apparel</span><span class="tag">02 / Spec</span></div><h3>Fashion Motion — Concept 02</h3><p>Fashion-forward movement and styling for a modern, vertical-first campaign.</p></div>
-      </article>
-      <article class="project" data-category="social" data-title="Social Ad — Concept 03" data-video="">
-        <div class="media"><div class="placeholder"><div class="orb">◈</div><strong>YOUR SOCIAL AD</strong><small>Drop your MP4 into the videos folder</small></div><button class="play" type="button">▶ Preview</button></div>
-        <div class="pbody"><div class="pmeta"><span>Short-form advertising</span><span class="tag">03 / Spec</span></div><h3>Social Ad — Concept 03</h3><p>A quick-hook creative concept designed for TikTok, Reels, and product discovery.</p></div>
-      </article>
-      <article class="project" data-category="cinematic" data-title="World Building — Concept 04" data-video="">
-        <div class="media"><div class="placeholder"><div class="orb">⌁</div><strong>YOUR CINEMATIC VIDEO</strong><small>Drop your MP4 into the videos folder</small></div><button class="play" type="button">▶ Preview</button></div>
-        <div class="pbody"><div class="pmeta"><span>Cinematic / VFX</span><span class="tag">04 / Spec</span></div><h3>World Building — Concept 04</h3><p>An atmospheric visual experiment exploring scale, environments, and cinematic mood.</p></div>
-      </article>
-    </div>
-    <p class="note">Portfolio tip: use only work you created or have permission to show. Label concept/spec work clearly and add real client names or results only when accurate.</p>
-  </div></section>
-  <section class="section" id="about"><div class="wrap aboutgrid">
-    <div class="aboutcopy"><div class="kicker">A little about me</div><h2>Creative thinking.<br><span class="gradient">AI-powered execution.</span></h2><p>I'm Christian Comedia, an AI video creator interested in visual storytelling, product advertising, fashion concepts, and cinematic content. I combine creative direction with generative tools to turn a brief into a clear visual idea.</p><p>My focus is on intentional shots, consistent product details, strong composition, and content made for the platform it will live on.</p><a class="btn" href="#contact">Have a brief? Let's talk ↗</a></div>
-    <div class="aboutcard"><h3>Tools & creative skills</h3><div class="skilllist"><span class="skill">Google Flow</span><span class="skill">Veo</span><span class="skill">Omni Flash</span><span class="skill">AI prompting</span><span class="skill">Creative direction</span><span class="skill">Product storytelling</span><span class="skill">Camera & shot planning</span><span class="skill">Short-form concepts</span><span class="skill">CapCut editing</span></div><p class="tiny" style="margin-top:18px">Edit this list to match the tools and skills you actively use.</p></div>
-  </div></section>
-  <section class="section" id="process"><div class="wrap"><div class="kicker">How I work</div><h2>From idea to final frame.</h2><div class="steps">
-    <div class="step"><div class="num">01</div><h4>Discover</h4><p>Understand the product, audience, platform, and goal of the video.</p></div>
-    <div class="step"><div class="num">02</div><h4>Direct & generate</h4><p>Build the visual concept, write prompts, and generate scenes with continuity in mind.</p></div>
-    <div class="step"><div class="num">03</div><h4>Refine & deliver</h4><p>Review the output, edit the sequence, and prepare platform-ready deliverables.</p></div>
-  </div></div></section>
-  <section class="section" id="contact"><div class="wrap"><div class="contact"><div class="kicker">Have something in mind?</div><h2>Let's create something <span class="gradient">worth watching.</span></h2><p>Need a product ad, a fashion visual, or an AI-powered creative concept? Send me a message and tell me what you're building.</p><div class="contactrow"><div class="contactlinks"><a class="btn primary" id="emailLink" href="mailto:YOUR_EMAIL@example.com">Email me ↗</a><a class="btn" id="socialLink" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div><span class="tiny">Available for freelance projects & collaborations</span></div></div></div></section>
-</main>
-<footer class="footer"><div class="wrap footerin"><span>© <span id="year"></span> Christian Comedia · AI Video Creator</span><span>Built with curiosity and creative technology.</span></div></footer>
-<dialog id="player"><div class="modalhead"><strong id="modalTitle">Project preview</strong><button id="closeModal" aria-label="Close preview">×</button></div><video class="modalvideo" id="modalVideo" controls playsinline></video></dialog>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0b0b0f">
+<meta name="description" content="Christian Comedia's AI video and affiliate creative portfolio. Product promotions, AI-generated product images, and cinematic experiments.">
+<title>Christian Comedia — AI Creative Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0b0f;--panel:#121218;--text:#f4f2f8;--muted:#a5a1b2;--line:rgba(255,255,255,.1);--violet:#a78bfa;--pink:#f0abfc;--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}body{margin:0;background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+.nav{position:sticky;top:0;z-index:10;background:rgba(11,11,15,.84);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.navin{height:70px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font:700 1.1rem 'Space Grotesk';letter-spacing:-.04em}.brand span{color:var(--violet)}.links{display:flex;gap:25px;color:var(--muted);font-size:.9rem}.links a:hover{color:white}.navcta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--line);padding:10px 16px;border-radius:999px;font-weight:600;font-size:.9rem}.navcta:hover,.btn:hover{border-color:var(--violet)}.btn.primary{background:linear-gradient(110deg,var(--violet),var(--pink));color:#15111d;border:0}
+.hero{position:relative;overflow:hidden;padding:100px 0 72px}.hero:before{content:"";position:absolute;width:650px;height:650px;border-radius:50%;right:-150px;top:-250px;background:radial-gradient(circle,rgba(139,92,246,.24),transparent 68%);pointer-events:none}.eyebrow,.kicker{color:#cbbaff;font-size:.76rem;font-weight:700;text-transform:uppercase;letter-spacing:.16em}.eyebrow{display:flex;align-items:center;gap:9px}.dot{width:7px;height:7px;border-radius:50%;background:#c4b5fd;box-shadow:0 0 14px #a78bfa}h1,h2,h3{font-family:'Space Grotesk'}.hero h1{font-size:clamp(3.2rem,8vw,7rem);line-height:.96;letter-spacing:-.075em;max-width:900px;margin:25px 0}.gradient{background:linear-gradient(100deg,#fff 10%,#c4b5fd 52%,#f0abfc 95%);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:1.1rem;color:var(--muted);max-width:640px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.hero-foot{display:flex;gap:22px;flex-wrap:wrap;margin-top:46px;color:var(--muted);font-size:.85rem}.hero-foot b{color:white}
+.section{padding:70px 0}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:22px;margin-bottom:26px}.section h2{font-size:clamp(2rem,4vw,3.3rem);line-height:1.08;letter-spacing:-.055em;margin:8px 0 0}.sectionhead p{max-width:420px;color:var(--muted);margin:0}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}.filter{border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:8px 14px;cursor:pointer}.filter.active,.filter:hover{background:#242033;color:white;border-color:#8b5cf6}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.project{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--panel);transition:transform .2s,border-color .2s}.project:hover{transform:translateY(-3px);border-color:rgba(167,139,250,.5)}.project[hidden]{display:none}.media{aspect-ratio:16/9;position:relative;background:#17131f;overflow:hidden}.media video,.media img{width:100%;height:100%;object-fit:cover;display:block}.media video{background:#111}.image-media{aspect-ratio:4/5;background:#19171d}.image-media img{object-fit:cover}.media-badge{position:absolute;top:12px;left:12px;background:rgba(10,10,15,.78);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:4px 9px;font-size:.68rem;letter-spacing:.1em;pointer-events:none}.pbody{padding:18px}.pmeta{display:flex;justify-content:space-between;gap:10px;color:var(--muted);font-size:.74rem;text-transform:uppercase;letter-spacing:.08em}.tag{border:1px solid var(--line);padding:3px 8px;border-radius:999px;letter-spacing:0}.pbody h3{font-size:1.25rem;margin:11px 0 5px}.pbody p{color:var(--muted);font-size:.9rem;margin:0}.note{font-size:.82rem;color:var(--muted);margin-top:18px}
+.aboutgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}.aboutcopy p{color:var(--muted);font-size:1rem}.aboutcard{padding:26px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,#17151f,#101014)}.aboutcard h3{margin-top:0}.skilllist{display:flex;flex-wrap:wrap;gap:9px}.skill{padding:8px 11px;border-radius:9px;background:#22202b;border:1px solid var(--line);font-size:.85rem;color:#e7e0f8}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:25px}.step{padding:20px;border:1px solid var(--line);border-radius:14px;background:var(--panel)}.num{color:var(--violet);font:600 1.4rem 'Space Grotesk'}.step h3{margin:7px 0}.step p{color:var(--muted);font-size:.88rem;margin:0}
+.contact{padding:44px;border:1px solid rgba(167,139,250,.3);border-radius:24px;background:radial-gradient(ellipse at 90% 10%,rgba(139,92,246,.19),transparent 40%),#121118}.contact p{color:var(--muted);max-width:580px}.contactrow{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:22px}.footer{padding:26px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem}.footerin{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.tiny{font-size:.76rem;color:var(--muted)}
+@media(max-width:760px){.links{display:none}.hero{padding:72px 0 52px}.section{padding:52px 0}.sectionhead{display:block}.sectionhead p{margin-top:12px}.grid,.aboutgrid{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.contact{padding:26px}.wrap{width:min(var(--max),calc(100% - 28px))}}
+</style></head><body>
+<header class="nav"><div class="wrap navin"><a class="brand" href="#home">CHRISTIAN<span>.</span></a><nav class="links"><a href="#work">Work</a><a href="#about">About</a><a href="#process">Process</a><a href="#contact">Contact</a></nav><a class="navcta" href="#contact">Let's collaborate ↗</a></div></header>
+<main><section class="hero" id="home"><div class="wrap"><div class="eyebrow"><span class="dot"></span> AI CREATIVE PORTFOLIO · 2026</div>
+<h1>Ideas, made<br><span class="gradient">visual.</span></h1>
+<p>I'm Christian Comedia, an AI creative exploring product promotions, affiliate-ready visuals, and cinematic storytelling. I turn product references and creative concepts into short-form visual content.</p>
+<div class="actions"><a class="btn primary" href="#work">Explore selected work ↘</a><a class="btn" href="#contact">Contact me ↗</a></div>
+<div class="hero-foot"><span>✦ <b>AI product promotions</b></span><span>✦ Affiliate creative images</span><span>✦ Cinematic experiments</span></div></div></section>
+<section class="section" id="work"><div class="wrap"><div class="sectionhead"><div><div class="kicker">Selected work</div><h2>Experiments in every frame.</h2></div><p>A curated collection of AI-generated product concepts, affiliate visuals, and storytelling experiments. These are self-initiated samples, not claims of client work.</p></div>
+<div class="filters" role="group" aria-label="Filter projects"><button class="filter active" data-filter="all">All work</button><button class="filter" data-filter="videos">AI videos</button><button class="filter" data-filter="images">AI images</button></div>
+<div class="grid" id="projectGrid"><article class="project" data-type="video" data-category="videos" data-title="Miniature Artists Studio">
+      <div class="media"><video controls preload="metadata" playsinline src="videos/miniature-artists-studio.mp4" aria-label="Miniature Artists Studio"></video><span class="media-badge">VIDEO</span></div>
+      <div class="pbody"><div class="pmeta"><span>Cinematic / Miniature</span><span class="tag">01</span></div><h3>Miniature Artists Studio</h3><p>A miniature-world cinematic experiment focused on atmosphere, scale, and visual storytelling.</p></div>
+    </article><article class="project" data-type="video" data-category="videos" data-title="Luxury Bag Showcase">
+      <div class="media"><video controls preload="metadata" playsinline src="videos/luxury-bag-showcase.mp4" aria-label="Luxury Bag Showcase"></video><span class="media-badge">VIDEO</span></div>
+      <div class="pbody"><div class="pmeta"><span>Product Advertising</span><span class="tag">02</span></div><h3>Luxury Bag Showcase</h3><p>A product-focused bag showcase using clean framing and soft lifestyle lighting.</p></div>
+    </article><article class="project" data-type="video" data-category="videos" data-title="Kidswear Fashion Showcase">
+      <div class="media"><video controls preload="metadata" playsinline src="videos/kids-fashion-walk-01.mp4" aria-label="Kidswear Fashion Showcase"></video><span class="media-badge">VIDEO</span></div>
+      <div class="pbody"><div class="pmeta"><span>Fashion / Affiliate</span><span class="tag">03</span></div><h3>Kidswear Fashion Showcase</h3><p>A short fashion presentation designed to keep the clothing visible throughout the scene.</p></div>
+    </article><article class="project" data-type="video" data-category="videos" data-title="Backpack Product Showcase">
+      <div class="media"><video controls preload="metadata" playsinline src="videos/backpack-product-showcase.mp4" aria-label="Backpack Product Showcase"></video><span class="media-badge">VIDEO</span></div>
+      <div class="pbody"><div class="pmeta"><span>Product Advertising</span><span class="tag">04</span></div><h3>Backpack Product Showcase</h3><p>A minimal product presentation highlighting silhouette, texture, and everyday styling.</p></div>
+    </article><article class="project" data-type="video" data-category="videos" data-title="Brown Sunglasses Ad">
+      <div class="media"><video controls preload="metadata" playsinline src="videos/brown-sunglasses-ad.mp4" aria-label="Brown Sunglasses Ad"></video><span class="media-badge">VIDEO</span></div>
+      <div class="pbody"><div class="pmeta"><span>Accessories / Affiliate</span><span class="tag">05</span></div><h3>Brown Sunglasses Ad</h3><p>A close-up accessories concept with warm tones and product-led composition.</p></div>
+    </article><article class="project" data-type="video" data-category="videos" data-title="Designer Bag Detail Showcase">
+      <div class="media"><video controls preload="metadata" playsinline src="videos/designer-bag-detail-showcase.mp4" aria-label="Designer Bag Detail Showcase"></video><span class="media-badge">VIDEO</span></div>
+      <div class="pbody"><div class="pmeta"><span>Product Advertising</span><span class="tag">06</span></div><h3>Designer Bag Detail Showcase</h3><p>A close product showcase built around shape, material, and detail.</p></div>
+    </article><article class="project" data-type="video" data-category="videos" data-title="Drama Scene Experiment">
+      <div class="media"><video controls preload="metadata" playsinline src="videos/drama-scene-experiment.mp4" aria-label="Drama Scene Experiment"></video><span class="media-badge">VIDEO</span></div>
+      <div class="pbody"><div class="pmeta"><span>Drama / Storytelling</span><span class="tag">07</span></div><h3>Drama Scene Experiment</h3><p>An experimental AI drama scene exploring character interaction and narrative mood.</p></div>
+    </article><article class="project" data-type="video" data-category="videos" data-title="Drama — Part One">
+      <div class="media"><video controls preload="metadata" playsinline src="videos/drama-part-one.mp4" aria-label="Drama — Part One"></video><span class="media-badge">VIDEO</span></div>
+      <div class="pbody"><div class="pmeta"><span>Drama / Storytelling</span><span class="tag">08</span></div><h3>Drama — Part One</h3><p>A short-form drama experiment created as a narrative hook.</p></div>
+    </article><article class="project" data-type="video" data-category="videos" data-title="Cyberpunk Miniature City">
+      <div class="media"><video controls preload="metadata" playsinline src="videos/cyberpunk-miniature-city.mp4" aria-label="Cyberpunk Miniature City"></video><span class="media-badge">VIDEO</span></div>
+      <div class="pbody"><div class="pmeta"><span>Cinematic / Miniature</span><span class="tag">09</span></div><h3>Cyberpunk Miniature City</h3><p>A stylized miniature-city scene with a futuristic urban atmosphere.</p></div>
+    </article><article class="project" data-type="video" data-category="videos" data-title="Footwear Showcase">
+      <div class="media"><video controls preload="metadata" playsinline src="videos/footwear-showcase-loafers.mp4" aria-label="Footwear Showcase"></video><span class="media-badge">VIDEO</span></div>
+      <div class="pbody"><div class="pmeta"><span>Footwear / Affiliate</span><span class="tag">10</span></div><h3>Footwear Showcase</h3><p>A short footwear presentation using soft lighting and a clean product-focused setup.</p></div>
+    </article><article class="project" data-type="video" data-category="videos" data-title="Luxury Watch Ad">
+      <div class="media"><video controls preload="metadata" playsinline src="videos/luxury-watch-ad.mp4" aria-label="Luxury Watch Ad"></video><span class="media-badge">VIDEO</span></div>
+      <div class="pbody"><div class="pmeta"><span>Accessories / Affiliate</span><span class="tag">11</span></div><h3>Luxury Watch Ad</h3><p>A close-up watch concept emphasizing metallic detail and premium styling.</p></div>
+    </article><article class="project" data-type="video" data-category="videos" data-title="Kidswear Outfit Showcase">
+      <div class="media"><video controls preload="metadata" playsinline src="videos/kids-fashion-walk-02.mp4" aria-label="Kidswear Outfit Showcase"></video><span class="media-badge">VIDEO</span></div>
+      <div class="pbody"><div class="pmeta"><span>Fashion / Affiliate</span><span class="tag">12</span></div><h3>Kidswear Outfit Showcase</h3><p>A second kidswear concept focused on showing the outfit in motion.</p></div>
+    </article><article class="project" data-type="video" data-category="videos" data-title="Footwear Showcase — Sandals">
+      <div class="media"><video controls preload="metadata" playsinline src="videos/footwear-showcase-sandals.mp4" aria-label="Footwear Showcase — Sandals"></video><span class="media-badge">VIDEO</span></div>
+      <div class="pbody"><div class="pmeta"><span>Footwear / Affiliate</span><span class="tag">13</span></div><h3>Footwear Showcase — Sandals</h3><p>A product-led footwear clip with a neutral, lifestyle-inspired setting.</p></div>
+    </article><article class="project" data-type="image" data-category="images" data-title="Graphic Shorts Lifestyle Concept">
+      <div class="media image-media"><img loading="lazy" src="images/graphic-shorts-lifestyle.jpg" alt="Graphic Shorts Lifestyle Concept"><span class="media-badge">IMAGE</span></div>
+      <div class="pbody"><div class="pmeta"><span>AI Affiliate Images</span><span class="tag">01</span></div><h3>Graphic Shorts Lifestyle Concept</h3><p>A lifestyle flat-lay concept for a black-and-white graphic shorts product.</p></div>
+    </article><article class="project" data-type="image" data-category="images" data-title="Graphic Shorts Store Presentation">
+      <div class="media image-media"><img loading="lazy" src="images/graphic-shorts-store-reference.jpg" alt="Graphic Shorts Store Presentation"><span class="media-badge">IMAGE</span></div>
+      <div class="pbody"><div class="pmeta"><span>AI Affiliate Images</span><span class="tag">02</span></div><h3>Graphic Shorts Store Presentation</h3><p>A store-style product presentation based on a reference garment.</p></div>
+    </article><article class="project" data-type="image" data-category="images" data-title="Camouflage Cargo Flat Lay">
+      <div class="media image-media"><img loading="lazy" src="images/camouflage-cargo-flatlay.jpg" alt="Camouflage Cargo Flat Lay"><span class="media-badge">IMAGE</span></div>
+      <div class="pbody"><div class="pmeta"><span>AI Affiliate Images</span><span class="tag">03</span></div><h3>Camouflage Cargo Flat Lay</h3><p>A warm-toned lifestyle arrangement for camouflage cargo pants.</p></div>
+    </article><article class="project" data-type="image" data-category="images" data-title="Cargo Pants Product Reference">
+      <div class="media image-media"><img loading="lazy" src="images/camouflage-cargo-reference.jpg" alt="Cargo Pants Product Reference"><span class="media-badge">IMAGE</span></div>
+      <div class="pbody"><div class="pmeta"><span>AI Affiliate Images</span><span class="tag">04</span></div><h3>Cargo Pants Product Reference</h3><p>A clean reference image showing the garment design.</p></div>
+    </article><article class="project" data-type="image" data-category="images" data-title="Floral Set Reference">
+      <div class="media image-media"><img loading="lazy" src="images/floral-set-reference.jpg" alt="Floral Set Reference"><span class="media-badge">IMAGE</span></div>
+      <div class="pbody"><div class="pmeta"><span>AI Affiliate Images</span><span class="tag">05</span></div><h3>Floral Set Reference</h3><p>A reference presentation for a pink floral outfit.</p></div>
+    </article><article class="project" data-type="image" data-category="images" data-title="Floral Set Lifestyle Concept">
+      <div class="media image-media"><img loading="lazy" src="images/floral-set-lifestyle.jpg" alt="Floral Set Lifestyle Concept"><span class="media-badge">IMAGE</span></div>
+      <div class="pbody"><div class="pmeta"><span>AI Affiliate Images</span><span class="tag">06</span></div><h3>Floral Set Lifestyle Concept</h3><p>A lifestyle flat lay with coordinated accessories and a bright feminine palette.</p></div>
+    </article><article class="project" data-type="image" data-category="images" data-title="Pink Jacket Flat Lay">
+      <div class="media image-media"><img loading="lazy" src="images/pink-jacket-flatlay.jpg" alt="Pink Jacket Flat Lay"><span class="media-badge">IMAGE</span></div>
+      <div class="pbody"><div class="pmeta"><span>AI Affiliate Images</span><span class="tag">07</span></div><h3>Pink Jacket Flat Lay</h3><p>A styled flat-lay concept for a pink corduroy jacket.</p></div>
+    </article><article class="project" data-type="image" data-category="images" data-title="Pink Jacket Reference">
+      <div class="media image-media"><img loading="lazy" src="images/pink-jacket-reference.jpg" alt="Pink Jacket Reference"><span class="media-badge">IMAGE</span></div>
+      <div class="pbody"><div class="pmeta"><span>AI Affiliate Images</span><span class="tag">08</span></div><h3>Pink Jacket Reference</h3><p>A product reference image showing the jacket worn.</p></div>
+    </article></div>
+<p class="note">Some visuals are AI-generated concepts. For affiliate use, compare against the real product and verify details before publishing. Product and brand accuracy can vary in generated media.</p>
+</div></section>
+<section class="section" id="about"><div class="wrap aboutgrid"><div class="aboutcopy"><div class="kicker">About me</div><h2>Creative direction.<br><span class="gradient">AI-powered workflow.</span></h2><p>I'm Christian Comedia. I create AI-assisted promotional videos and product images, with a focus on fashion, accessories, and short-form affiliate content. I also explore cinematic and drama-style scenes to develop my visual storytelling skills.</p><p>My process focuses on product visibility, scene composition, reference consistency, and matching the format to the intended platform.</p><a class="btn" href="#contact">Let's talk about a project ↗</a></div>
+<div class="aboutcard"><h3>Tools & skills</h3><div class="skilllist"><span class="skill">Google Flow</span><span class="skill">Veo</span><span class="skill">Omni Flash</span><span class="skill">AI prompting</span><span class="skill">Visual composition</span><span class="skill">Product storytelling</span><span class="skill">Shot planning</span><span class="skill">Affiliate creatives</span><span class="skill">CapCut</span></div><p class="tiny" style="margin-top:18px">Tools listed are editable—keep only the ones you actively use.</p></div></div></section>
+<section class="section" id="process"><div class="wrap"><div class="kicker">Creative process</div><h2>From reference to final visual.</h2><div class="steps"><div class="step"><div class="num">01</div><h3>Reference & concept</h3><p>Identify the product details, creative goal, audience, and format.</p></div><div class="step"><div class="num">02</div><h3>Prompt & generate</h3><p>Build scenes and image concepts with composition and continuity in mind.</p></div><div class="step"><div class="num">03</div><h3>Review & refine</h3><p>Check product details, select the strongest output, and prepare it for the platform.</p></div></div></div></section>
+<section class="section" id="contact"><div class="wrap"><div class="contact"><div class="kicker">Have a concept?</div><h2>Let's make something <span class="gradient">worth watching.</span></h2><p>Interested in AI product videos, affiliate visuals, or creative experiments? Reach out and tell me about your idea.</p><div class="contactrow"><div><a class="btn primary" href="mailto:YOUR_EMAIL@example.com">Email me ↗</a> <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div><span class="tiny">Replace placeholder contact links before sharing publicly.</span></div></div></div></section></main>
+<footer class="footer"><div class="wrap footerin"><span>© <span id="year"></span> Christian Comedia · AI Creative Portfolio</span><span>Made with curiosity and creative technology.</span></div></footer>
 <script>
-  // CUSTOMIZE THESE SETTINGS:
-  const SETTINGS = {
-    email: "YOUR_EMAIL@example.com",
-    linkedin: "https://www.linkedin.com/",
-    // Set each project's data-video to a local path such as "videos/product-film.mp4".
-  };
-  document.getElementById("year").textContent = new Date().getFullYear();
-  document.getElementById("emailLink").href = "mailto:" + SETTINGS.email;
-  document.getElementById("socialLink").href = SETTINGS.linkedin;
-  document.querySelectorAll(".filter").forEach(btn => btn.addEventListener("click", () => {
-    document.querySelectorAll(".filter").forEach(b => b.classList.toggle("active", b === btn));
-    document.querySelectorAll(".project").forEach(card => card.hidden = !(btn.dataset.filter === "all" || card.dataset.category === btn.dataset.filter));
-  }));
-  const dialog = document.getElementById("player"), modalVideo = document.getElementById("modalVideo");
-  document.querySelectorAll(".project .play").forEach(btn => btn.addEventListener("click", () => {
-    const card = btn.closest(".project"), src = card.dataset.video;
-    if (!src) { alert("Add your MP4 file and set this project's data-video path in index.html first. See README.md for steps."); return; }
-    document.getElementById("modalTitle").textContent = card.dataset.title;
-    modalVideo.src = src; dialog.showModal(); modalVideo.play().catch(() => {});
-  }));
-  function closePlayer(){modalVideo.pause();modalVideo.removeAttribute("src");modalVideo.load();dialog.close();}
-  document.getElementById("closeModal").addEventListener("click", closePlayer);
-  dialog.addEventListener("click", e => { if(e.target === dialog) closePlayer(); });
-</script>
-</body>
-</html>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(b=>b.classList.toggle('active',b===btn));document.querySelectorAll('.project').forEach(card=>card.hidden=!(btn.dataset.filter==='all'||card.dataset.type=== (btn.dataset.filter==='videos'?'video':'image')));}));
+</script></body></html>
