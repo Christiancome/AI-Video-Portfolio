@@ -1,20 +1,23 @@
 # Christian Comedia — AI Creative Portfolio
 
-Responsive static portfolio for Vercel. Includes your current AI video samples and AI affiliate image concepts.
+A responsive static portfolio featuring 13 restored AI videos and four before-and-after image projects.
 
 ## Preview
-Open `index.html` in a browser.
+Run `python -m http.server 4173` in this folder, then visit http://localhost:4173.
 
-## Publish / update on Vercel
-1. Upload the contents of this folder to the root of your GitHub repository (`index.html`, `videos/`, `images/`, `README.md`).
-2. In Vercel, keep Framework Preset = Other, Root Directory = `./`, and leave Build/Install Command blank. Output Directory can be `.`.
-3. Deploy. Future GitHub commits automatically redeploy the site.
+## Deploy to Vercel
+Upload or commit all of these files and folders to the root of Christiancome/AI-Video-Portfolio:
+- index.html, styles.css, portfolio.js, favicon.svg
+- images/, posters/, videos/
 
-## Customize before sharing
-- Replace `YOUR_EMAIL@example.com` and the LinkedIn URL in `index.html`.
-- Titles/descriptions can be edited in the project cards.
-- This version labels all work as self-initiated samples; it does not imply paid client work.
-- Verify generated product details against real items before using the images or videos in live affiliate listings.
+Use Framework Preset: Other; Root Directory: ./; no install or build command; Output Directory: .
 
-## Notes
-The website is static HTML/CSS/JS, no framework or build step required. Video files are local assets; keep their relative paths unchanged.
+The videos directory is required. The previous repository did not include it, and its HTML requested filenames that did not match the media on D:\PortfolioAI\videos.
+
+## Edit content
+Project titles, categories, descriptions, and filenames live in portfolio.js. Contact links use christian.comedia.dr@gmail.com in index.html and portfolio.js. No placeholder social links remain.
+
+## Validation
+JavaScript syntax checked. Local browser checks covered video loading and playback, gallery filters and pagination, keyboard comparison control, dialog closing, mobile navigation, and layouts at 320px, 390px and desktop width. All 13 MP4s contain H.264 video.
+
+All showcased work is identified as self-initiated AI-assisted work. Check generated product details against real items before using creative in affiliate listings.
