@@ -6,3 +6,5 @@
 .comparison{width:min(100%,500px);margin:auto}.comparison img{object-fit:cover}
 @media(max-width:360px){.hero h1{font-size:54px;letter-spacing:-3.5px}.hero .actions{gap:18px}.hero .button{padding:13px 18px}.hero .text-link{font-size:11px;gap:14px}.contact h2{font-size:34px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+.contact-actions{display:flex;flex-wrap:wrap;gap:10px}.contact .telegram-button{background:transparent;color:#1c1726;border-color:#1c17264d;gap:16px}
